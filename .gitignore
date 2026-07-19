@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+
+# Google OAuth credentials/tokens -- never commit real secrets
+api/creds/credentials.json
+api/creds/token.json
