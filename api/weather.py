@@ -1,4 +1,5 @@
 # importing modules
+import os
 import requests, json
 
 # API base URL
@@ -7,8 +8,8 @@ BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
 # City Name
 CITY = "New Delhi"
 
-# Your API key
-API_KEY = "REDACTED"
+# Your API key (set via environment variable, do not hardcode)
+API_KEY = os.environ["OPENWEATHER_API_KEY"]
 
 # updating the URL
 URL = BASE_URL + "q=" + CITY + "&appid=" + API_KEY
